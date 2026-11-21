@@ -1,5 +1,5 @@
 ---
-title: "R code and figures associated with the datainbrief-repo"
+title: "R code and figures associated with the fire-ghg-review-jmp-scripts"
 author: "Caius Ribeiro-Kumara"
 output:
   prettydoc::html_pretty:
