@@ -7,7 +7,13 @@ library(ggformula)
 library("extrafont")
 
 myFont <- "Segoe UI"
-windowsFonts(mono  = myFont)
+#windowsFonts() only exists on Windows; use the default sans font elsewhere
+if (.Platform$OS.type == "windows") {
+  windowsFonts(mono  = myFont)
+  plotFont <- "mono"
+} else {
+  plotFont <- "sans"
+}
 
 #Load data
 data <- read.table(file = "ghg-fluxes.csv",
@@ -84,7 +90,7 @@ p1 <- ggplot() +
         legend.key.size = unit(0.5,"line"),
         axis.title = element_text(size=12),
         axis.text = element_text(size=10)) +
-  theme(text = element_text(size = 12, family="mono")) +
+  theme(text = element_text(size = 12, family = plotFont)) +
   scale_x_continuous(breaks = seq(0, 100, by = 20)) +
   scale_colour_manual(name = "labelsev2",
                                breaks = c("High severity", "Low severity",

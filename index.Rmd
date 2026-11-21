@@ -1,17 +1,36 @@
 ---
-title: "R code and figures associated with the fire-ghg-review-jmp-scripts"
+title: "Forest fires & soil GHG emissions: review figures"
 author: "Caius Ribeiro-Kumara"
 output:
-  prettydoc::html_pretty:
-    theme: cayman
-    highlight: github
+  html_document:
+    theme:
+      version: 5
+      preset: bootstrap
+      bg: "#ffffff"
+      fg: "#1c1a24"
+      primary: "#5b2fc9"
+      base_font: !expr bslib::font_collection("system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif")
+      heading_font: !expr bslib::font_collection("system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif")
+      code_font: !expr bslib::font_collection("ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace")
+    highlight: textmate
+    css: notebook.css
+    includes:
+      before_body: nav.html
+    toc: true
+    toc_float:
+      collapsed: false
+    code_folding: hide
     fig_caption: true
     fig_width: 5
     fig_height: 5
     df_print: paged
     number_sections: false
-    toc: false
 ---
+
+```{r setup, include = FALSE}
+# Package deprecation warnings are not part of the analysis output
+knitr::opts_chunk$set(warning = FALSE)
+```
 
 ***
   
