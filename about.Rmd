@@ -4,6 +4,6 @@ This notebook includes R code to reproduce the figures from the publication *How
 
 Packages used *ggplot2*, *ggformula*, and *extrafont*. See citation at the end of script.
 
-GitHub repository for the publication using JMP scripts: [Datainbrief Repo](https://github.com/caiusribeiro/datainbrief-repo)
+GitHub repository for the publication using JMP scripts: [fire-ghg-review-jmp-scripts](https://github.com/caiusribeiro/fire-ghg-review-jmp-scripts)
 
-GitHub repository for this notebook: [Datainbrief 1](https://github.com/caiusribeiro/datainbrief-1-R-scripts)
+GitHub repository for this notebook: [fire-ghg-review-r](https://github.com/caiusribeiro/fire-ghg-review-r)
